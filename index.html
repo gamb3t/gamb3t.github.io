@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>문프코인</title>
+    <link rel="icon" href="duco.png" type="image/png"/>
+    <link rel="shortcut icon" href="duco.png" type="image/png"/>
+
+    <meta name="description" content="문프코인 - 훠훠훠.">
+    <meta name="keywords" content="문재인, 문재앙, 문프코인, 비트코인">
+    <link rel="canonical" href="index.html" />
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#00498c">
+
+
+
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="bulma-pageloader.min.css">
+    <script src="all.min.js"></script>
+    <script src="jquery-3.6.0.slim.min.js"></script>
+    <script src="jquery.min.js"></script>
+
+    <script async src="js%3Fid=UA-142187073-57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142187073-57');
+    </script>
+
+    <style>
+      .is-primary { 
+        /* Override Bulmas primary color to Duco-Colored gradient*/
+        background: linear-gradient(160deg, #e74c3c, #f39c12) !important;
+      }
+      .is-primary-animated {
+        color: #fafafa;
+        background: linear-gradient(223deg, #e74c3c, #4d67ff, #005eff, #00c8ff);
+        background-size: 800% 800%;
+
+        -webkit-animation: gradientAnim 4s ease infinite;
+        -moz-animation: gradientAnim 4s ease infinite;
+        -o-animation: gradientAnim 4s ease infinite;
+        animation: gradientAnim 4s ease infinite;
+      }
+      .button:hover {
+        color: #fafafa;
+        background: linear-gradient(223deg, #00498c, #f39c12, #f31291, #f3d012);
+        background-size: 800% 800%;
+
+        -webkit-animation: gradientAnim 1s ease infinite;
+        -moz-animation: gradientAnim 1s ease infinite;
+        -o-animation: gradientAnim 1s ease infinite;
+        animation: gradientAnim 1s ease infinite;
+      }
+      .rotating {
+        width: 20em;
+        height: 20em;
+        right: 5em;
+        top: 12em;
+        position: absolute;
+        animation: rotation 2s ease infinite;
+        transition: 0.1s;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes gradientAnim {
+        0%{background-position:0% 23%}
+        50%{background-position:100% 78%}
+        100%{background-position:0% 23%}
+      }
+      @-moz-keyframes gradientAnim {
+        0%{background-position:0% 23%}
+        50%{background-position:100% 78%}
+        100%{background-position:0% 23%}
+      }
+      @-o-keyframes gradientAnim {
+        0%{background-position:0% 23%}
+        50%{background-position:100% 78%}
+        100%{background-position:0% 23%}
+      }
+      @keyframes gradientAnim {
+        0%{background-position:0% 23%}
+        50%{background-position:100% 78%}
+        100%{background-position:0% 23%}
+      }
+      .gradienttext {
+        /* Gradient text */
+        background: -webkit-linear-gradient(160deg, #EA2027, #EE5A24) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: #EA2027 !important;
+      }
+      .grid-list {
+        /* Split unordered lists */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pageloader" class="pageloader is-active is-primary is-bottom-to-top">
+      <span class="title">문프코인</span>
+    </div>
+
+
+    <section class="hero is-primary-animated is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-two-thirds ml-5 is-mobile is-multiline">
+            <p class="title" style="font-size:6em;color:white;">
+              문프코인
+            </p>
+            <p class="subtitle" style="font-size:1.35em;color:white;">
+              훠훠훠 문프코인 떡솽 기되합니둬.
+            </p>
+            <div class="columns">
+              <div class="column">
+                <ul class="ml-5">
+                  <li><i class="fa fa-desktop fa-fw"></i>&nbsp;깡!</li>
+                  <li><i class="fa fa-users fa-fw"></i>&nbsp;문프 사랑해요 & </li>
+                  <li><i class="fa fa-exchange-alt fa-fw"></i>&nbsp;알라뷰</li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+          <div class="column is-hidden-touch is-multiline" align="center">
+            <a href="https://discord.gg/bCYWZ27Vpe"><img class="rotating" align="center" src="duco-alt.png"></p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    
+  </body>
+</html>
+
+<script>
+  let pageloader = document.getElementById("pageloader"); // PAGE LOAGER
+  pageloader.setAttribute('class', "pageloader is-active is-primary is-bottom-to-top"); // Before page is loaded
+  window.addEventListener('load', function() {
+    pageloader.setAttribute('class', "pageloader is-primary is-bottom-to-top"); // After page is loaded
+  });
+
+  document.addEventListener('DOMContentLoaded', () => { // HAMBURGER MENU
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach( el => { // Add a click event on each of burger menus
+      el.addEventListener('click', () => {
+        const target = el.dataset.target; // Get the target from the "data-target" attribute
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active'); // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>
+
+<script> // Some statistics to fill in from the API
+  document.addEventListener('DOMContentLoaded', () => {
+    let ducoUsdPrice = 0.0956;
+    $.getJSON('https://raw.githubusercontent.com/revoxhere/duco-statistics/master/api.json', function(data) {
+      ducoUsdPrice = data["Duco price"];
+      document.getElementById("users").innerHTML = data["Registered users"];
+      document.getElementById("price").innerHTML = "$" + ducoUsdPrice.toFixed(4);
+    });
+  });
+</script>
